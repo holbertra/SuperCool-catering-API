@@ -1,0 +1,13 @@
+Remember to set environment variables before you tun the flask app
+TO SET:
+1) DATABASE_URL=postgresql://[db_user]:[db_password]@localhost/[db_name]
+2) SECRET_KEY=somesecretkey
+
+How to set the ENV variables
+MAC:        export [env_name]=[env_value]
+WINDOWS:    $ENV:DATABASE_URL=[env_value]
+PS C:>$ENV:DATABASE_URL="postgresql://postgres:password123@localhost/cater_app_db"
+PS C:>$ENV:SECRET_KEY="qwertyuiop1234567890"
+
+Check envionment variables
+PS C:>Get-ChildItem Env:DATABASE_URL
